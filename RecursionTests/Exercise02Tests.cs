@@ -14,7 +14,7 @@ namespace RecursionTests
         [TestCase(3, -1, "3 2 1 0 -1", Description = "Positive and negative numbers")]
         public void Test_Exercise2(int a, int b, string expected)
         {
-            var actualResult = Exercise02.Run(10, 10);
+            var actualResult = Exercise02.Run(a, b);
             actualResult.Should().BeEquivalentTo(expected);
         }
     }
